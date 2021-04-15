@@ -1,0 +1,412 @@
+#menu{
+    display: block;
+    background-color: #4b3a91;
+    color: #fff;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    padding: 0px;
+    width: 7%;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0px;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    display: block;
+    margin: 0px 0px 10px 0px; 
+    width: 100%;
+    cursor: pointer;
+}
+#menu li.activ{
+    background-color: #5fbf77;
+}
+#menu a{
+    color: #fff;
+}
+#menu li:hover{
+    border: 1px solid #000;
+}
+#menu .menu-logo{
+    width: 60%;
+}
+
+#mainPage{
+    background-color: #6d57c3;
+}
+#mainPage #lessons{
+    text-align: center;
+    color: #fff;
+}
+#mainPage #lessons a{
+    color: #fff;
+}
+#mainPage #lessons .chapter{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
+#mainPage #lessons .chapter .logo:hover{
+    border: 15px solid #9880ff;
+}
+#mainPage #lessons .chapter .logo{
+    border: 10px solid #ffd950;
+    border-radius: 20%;
+    background-color: aliceblue;
+}
+#mainPage #lessons .chapter .logo img{
+    width: 100%;
+}
+
+
+/*Страница раздел*/
+#task{
+    text-align: center;
+    position:  relative;
+    border-radius: 20px;
+    border: 0.5px solid #cbcbcb;
+    background-color: #fff;
+}
+#task .col-sm-12{
+
+}
+.task-wrap{
+    background-color: #d6eeeb;
+}
+
+#task #myTab li.active a{
+    background-color: #5ebd75 !important;
+    color: black;
+
+}
+
+#task #myTab li{
+    width: 30%;
+    color: black;
+}
+
+#task #myTab a{
+    color: black;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+#question{
+    text-align: center;
+}
+#question img{
+    width: 40%;
+}
+
+#question h3{
+    margin-bottom: 30px;
+}
+
+
+.answer{
+    margin-top: 30px;
+    position:  relative;
+}
+
+.answer img{
+    width: 50%;
+}
+
+.answer a{
+    border: 1px solid #3daeff; /* Рамка */
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 20px; /* Поля */
+    width: 70%;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+    font-family: Nunito-ExtraBold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+
+}
+
+.answer a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background-color: #3daeff;
+    width: 80%;
+}
+
+.decisions{
+    background-color: #5458a8;
+    display: block;
+    margin-top: 3%;
+    border-radius: 0 0 20px 20px;
+    padding: 1.5%;
+    box-shadow: 0 -5px #9297ff;
+
+}
+
+
+.decision a{
+    border: 0px solid #333; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px 20px; /* Поля */
+    width: 100%;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #fff; /* Цвет текста */
+    background-color: #5ebd75;
+    font-family: Nunito-ExtraBold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    box-shadow: 0 5px #2e9948;
+}
+
+.decision a#help{
+    width: 70%;
+    background-color: #3daeff;
+    box-shadow: 0 5px #0f83d7;
+}
+
+.decision a#help:hover{
+    background-color: #9ad3ff;
+
+}
+
+
+.decision a:hover {
+    background-color: #8bcf9b;
+}
+
+.close{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+
+
+}
+
+.close a{
+    border: 0.1px solid black;
+    color: black;
+    padding: 4px 15px;
+    box-shadow: 0 5px #a0a9b2;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-family: Nunito-ExtraBold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2em;
+}
+/*Конец страницы раздел*/
+
+
+/*Страница рейтинга */
+
+#rating{
+    text-align: center;
+    position:  relative;
+    /*    border: 0.5px solid #cbcbcb;*/
+}
+
+.rating-wrap{
+    background-color: #6d58c1;
+}
+
+.participants h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: Nunito-Black,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 48px;
+}
+
+
+#rating #myTab li.active a{
+    background-color: #ffffff !important;
+    color: black;
+    box-shadow: 0 5px #cccccc;
+
+}
+
+#rating #myTab li{
+    width: 30%;
+    color: #ffffff;
+}
+
+#rating #myTab a{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2em;
+    border-radius: 20px;
+    /*border-width: 0px;*/
+}
+
+/*
+#rating .tabPan{
+    background-color: #523f9f;
+}
+*//
+
+#rating #myTab li a:hover{
+    background-color: #6d58c1;
+}
+
+
+.participantsTable {
+    padding: 5%;
+    font-family: Nunito-ExtraBold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.participantsTable #num{
+    background-color: #ffe566;
+    height: 5%;
+    width: 10%;
+    border-radius: 10px 0 0 10px;
+    border-color: #6d58c1;
+    border-bottom: 2px solid #6d58c1;
+}
+.participantsTable #name{
+    background-color: #ffffff;
+    height: 5%;
+    width: 40%;
+    border-bottom: 2px solid #6d58c1;
+}
+.participantsTable #city{
+    background-color: #ffffff;
+    height: 5%;
+    width: 30%;
+    border-bottom: 2px solid #6d58c1;
+}
+.participantsTable #score{
+    background-color: #ffffff;
+    height: 5%;
+    width: 20% ;
+    border-radius: 0 10px 10px 0;
+    border-bottom: 2px solid #6d58c1;
+}
+/*Конец страницы рейтинга*/
+
+
+
+/*Страница профиля*/
+.settings h3{
+    font-family: Nunito-Black,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+#proffile .osnInfo{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-color: #6d58c1;
+    border: 2px solid #dfe2e8;
+    box-shadow: 0 5px #dfe2e8; 
+    border-top: 0;
+}
+
+.phoneInput{
+    width: 50%
+}
+.emailInput{
+    width: 50%
+}
+.student{
+    text-align: center;
+}
+.student .userNum {
+    background-color: #5cbb73;
+    position: relative;
+    
+}
+.studentsText h3{
+    font-family: Nunito-Black,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: left; 
+}
+
+.saveChange{
+    text-align: center;
+/*
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-color: #6d58c1;
+    border: 2px solid #dfe2e8;
+    box-shadow: 0 5px #dfe2e8; 
+    display: inline-block;
+    float: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: top;  
+    width: 100%;
+*/
+}
+
+.saveChange a{
+    border: 0px solid #333; /* Рамка */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #fff; /* Цвет текста */
+    background-color: #5ebd75;
+    font-family: Nunito-ExtraBold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    box-shadow: 0 5px #2e9948;
+}
+
+.saveChange a:hover {
+    background-color: #8bcf9b;
+}
+
+.addStudent a{
+    font-family: Nunito-Black,arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 36px;
+    letter-spacing: 0;  
+    color: black;
+}
+
+.fa-plus{
+    color: #5ebd75;
+}
+
+.changepass a{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 5;
+    letter-spacing: 0;     
+}
+.changepass a:hover{
+    color: #5ebd75;
+}
+.fa-lock{
+    color: #5ebd75;
+}
+
+
+
+/*Конец страницы профиля*/
