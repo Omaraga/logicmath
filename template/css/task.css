@@ -48,6 +48,7 @@
 }
 #task #myTab li.firstTask a{
     border-top-left-radius: 20px;
+    border-left: 0px solid #fff;
 }
 #task #myTab li.lastTask a{
     border-top-right-radius: 20px;
@@ -62,6 +63,7 @@
 #task #myTab li>a{
     padding: 5px 5px;
     margin-right: 0;
+    border-left: 2px solid #fff;
 }
 
 
@@ -124,18 +126,22 @@
 }
 
 .answer span{
-    border: 1px solid #3daeff; /* Рамка */
+    border: 2px solid #3daeff; /* Рамка */
     border-radius: 10px;
     display: inline-block;
     padding: 10px 20px; /* Поля */
     width: 70%;
     text-decoration: none; /* Убираем подчёркивание */
-    color: #000; /* Цвет текста */
+    color: rgb(0,92,168); /* Цвет текста */
     font-family: Calibri;
     font-style: normal;
-    font-weight: 550;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 25px;
 
+}
+#blockAnswer{
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #answerType6 span{
@@ -155,7 +161,8 @@
 
 #answerType6 span:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background-color: #fff;
+    border: 4px solid rgb(0,92,168); /* Рамка */
+
 
 }
 #answerType7 span{
@@ -176,13 +183,13 @@
 
 #answerType7 span:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background-color: #fff;
+    border: 4px solid rgb(0,92,168); /* Рамка */
 
 }
 
 .answer span:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background-color: #3daeff;
+    border: 4px solid rgb(0,92,168); /* Рамка */
 
 }
 
@@ -219,6 +226,10 @@
     padding-right: 0;
     padding-left: 0;
 }
+#help{
+    background-image: url("/template/images/razdel/leo_head.png");
+}
+
 
 .decision a#help{
     width: 70%;
