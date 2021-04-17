@@ -9,7 +9,7 @@ body{
 .bg-purple{
     background-color: #A15AC4;
 }
-#createTask p{
+#createTask>.form-group>p{
     color: #2e3033;
     font-size: 17px;
     font-weight: bold;

@@ -20,7 +20,7 @@
                             <div class="taskContent row">
                                 <? foreach ($taskList as $task):?>
                                     <div id="panel<?echo $task['id'];?>" style="<?=$currTaskId!=$task['id']? 'display:none;' :''?>;" task-help-text='<?=$task["helpText"]?>' task-solve-text='<?=$task["solveText"]?>' class="taskBody">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12 scoreBlock">
                                                 <span id="score" is-solved="<? echo $task['zap_otvetov'] == false || $task['zap_otvetov']['is_true'] == 0 ?0:1;?>"><? echo $task['zap_otvetov'] == false || $task['zap_otvetov']['is_true'] == 0 ?'<span style="font-size: 15px; color: #843534">Тапсырма шешілмеген<span></span>':'<span id="popytki"><span style="color: #34b44a; font-size: 25px;">'.$task['zap_otvetov']['popytki'].'</span> талпыныстан шешілді   </span><span style="color: #34b44a;font-size: 25px;">'.$task['zap_otvetov']['score'].' </span><i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>';?>
                                         </div>
                                         <div class="row">
@@ -287,7 +287,8 @@
                         <div class="decisions col-sm-12 col-xs-12">
                             <div class="row">
                                 <div class="decision col-sm-4" id="help">
-                                    <a href="" id="help" data-toggle="modal" data-target="#myModal">Көмек</a>
+                                    <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
+                                                                                                         alt="">Көмек</a>
                                 </div>
                                 <div class="decision col-sm-4" style="display: none" id="solve">
                                     <a href="" id="solve" data-toggle="modal" data-target="#myModal2">Шешiмi</a>

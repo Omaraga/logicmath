@@ -5,7 +5,7 @@
     border-radius: 20px;
     padding: 0 15px;
     border: 0.5px solid #cbcbcb;
-    background-color: #fff;
+    background-color: #ccfffc;
     margin-top: 1%;
     /*min-height: 60vh;*/
     /*max-height: 100vh;*/
@@ -28,6 +28,7 @@
 #task .info-line{
     text-align: center;
 }
+
 #task #score{
     text-align: center;
     margin-top: 5px;
@@ -90,6 +91,10 @@
 }
 #question{
     text-align: center;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 0 0 20px 20px;
 }
 #question img{
     width: auto;
@@ -136,11 +141,13 @@
     font-family: Calibri;
     font-style: normal;
     font-weight: 600;
+    background-color: #ffffff;
     font-size: 25px;
 
 }
 #blockAnswer{
     margin-right: 15px;
+    padding-top: 15px;
     margin-left: 15px;
 }
 
@@ -226,11 +233,17 @@
     padding-right: 0;
     padding-left: 0;
 }
-#help{
-    background-image: url("/template/images/razdel/leo_head.png");
+
+
+#help a > img{
+    width: 23%;
+    margin-right: 15%;
+    margin-left: -5%;
 }
-
-
+#help a#help{
+    padding: 0 0;
+    text-align: left;
+}
 .decision a#help{
     width: 70%;
     /*background-color: rgb(47,182,79);*/

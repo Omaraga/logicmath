@@ -26,8 +26,9 @@
     <script>
         $(document).ready(function() {
             $('#helpText').summernote();
+            $('#solveText').summernote();
             $('#title_kz').summernote({
-                placeholder: 'Hello stand alone ui',
+                placeholder: '',
                 tabsize: 2,
                 height: 120,
                 toolbar: [
@@ -35,13 +36,22 @@
                     ['font', ['bold', 'underline', 'clear']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']]
+                    ['table', ['table']]
                 ]
             });
-            $('#title_ru').summernote();
-            $('#solveText').summernote();
+            $('#title_ru').summernote({
+                placeholder: '',
+                tabsize: 2,
+                height: 120,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']]
+                ]
+            });
+
 
         });
     </script>
