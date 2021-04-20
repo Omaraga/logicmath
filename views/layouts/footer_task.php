@@ -217,7 +217,7 @@
             var taskId = parseInt(urlA[urlA.length-1]);
             var checkAns = $("#panel" + taskId + " .ansChecked");
             var questionType = $("#panel" + taskId +" #question").attr("task-type");
-            // console.log(questionType);
+            //console.log(questionType);
             if (questionType == "test"){
                 if (checkAns.length){
                     var answer = checkAns.attr('ans-val');
@@ -288,6 +288,14 @@
                 answer = answer.substring(0, answer.length - 1);
                 console.log(answer);
                 checkAnsF(taskId, answer);
+            }else if(questionType == 'testClose'){
+                var answer = $("#panel" + taskId + " #testClose").val();
+                if (answer.length > 0){
+                    checkAnsF(taskId, answer);
+                }else{
+                    $("#taskResh").css({'background-color': 'red'}).html('<h2>Жауапты енгізіңіз.</h2>').fadeIn(1000).delay(2000).fadeOut(1000);
+                }
+                console.log(answer);
             }
 
 

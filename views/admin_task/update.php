@@ -141,7 +141,13 @@
                             <?endforeach;?>
                         </div>
                         <div class="type_task" type-task-val="3" style="display: none">
-
+                            <p>Изображение вопроса</p>
+                            <div class="taskUpdateImg">
+                                <img src="/upload/images/task/<?= $task['id'];?>.jpg" alt="">
+                            </div>
+                            <input type="file" name="question" placeholder="" value="" class="form-control">
+                            <p>Введите правильный ответ</p>
+                            <input type="text" name="rightAnswer" placeholder="" value="<?=$task['answers'][0];?>" class="form-control">
                         </div>
                         <div class="type_task" type-task-val="4" style="display: none">
                             <input type="text" name = "string-size" placeholder="Количество строк и столбцов" id="string-size" value="<?=$colSize;?>" readonly>

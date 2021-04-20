@@ -19,7 +19,7 @@
 
                             <div class="taskContent row">
                                 <? foreach ($taskList as $task):?>
-                                    <div id="panel<?echo $task['id'];?>" style="<?=$currTaskId!=$task['id']? 'display:none;' :''?>;" task-help-text='<?=$task["helpText"]?>' task-solve-text='<?=$task["solveText"]?>' class="taskBody">
+                                    <div id="panel<?echo $task['id'];?>" style="<?=$currTaskId!=$task['id']? 'display:none;' :''?>;" task-help-text='<?=htmlspecialchars($task["helpText"]);?>' task-solve-text='<?=htmlspecialchars($task["solveText"]);?>'  class="taskBody">
                                         <div class="col-sm-12 scoreBlock">
                                                 <span id="score" is-solved="<? echo $task['zap_otvetov'] == false || $task['zap_otvetov']['is_true'] == 0 ?0:1;?>"><? echo $task['zap_otvetov'] == false || $task['zap_otvetov']['is_true'] == 0 ?'<span style="font-size: 15px; color: #843534">Тапсырма шешілмеген<span></span>':'<span id="popytki"><span style="color: #34b44a; font-size: 25px;">'.$task['zap_otvetov']['popytki'].'</span> талпыныстан шешілді   </span><span style="color: #34b44a;font-size: 25px;">'.$task['zap_otvetov']['score'].' </span><i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>';?>
                                         </div>
@@ -27,6 +27,16 @@
 <!--                                            <div class="col-sm-12">-->
                                                 <? if(intval($task['task_type']) == 1 || intval($task['task_type']) == 2):?>
                                                     <div class="questions" id="question" task-type="test" task-id="<?=$task['id'];?>">
+                                                        <h4><? echo $task['title_kz'];?></h4>
+                                                        <?$fileName = $_SERVER['DOCUMENT_ROOT'] ."/upload/images/task/".$task['id'].".jpg"; ?>
+                                                        <div class="task-main-cont">
+                                                            <?if(file_exists($fileName)):?>
+                                                                <img src="/upload/images/task/<?=$task['id'];?>.jpg" alt="">
+                                                            <?endif;?>
+                                                        </div>
+                                                    </div>
+                                                <?elseif (intval($task['task_type']) == 3):?>
+                                                    <div class="questions" id="question" task-type="testClose" task-id="<?=$task['id'];?>">
                                                         <h4><? echo $task['title_kz'];?></h4>
                                                         <?$fileName = $_SERVER['DOCUMENT_ROOT'] ."/upload/images/task/".$task['id'].".jpg"; ?>
                                                         <div class="task-main-cont">
@@ -158,6 +168,8 @@
                                                             </div>
                                                         </div>
                                                     <?endforeach;?>
+                                                <?elseif (intval($task['task_type']) == 3):?>
+                                                    <input type="text" task-id="<?=$task['id'];?>" task-type="testClose" id="testClose">
                                                 <?elseif (intval($task['task_type']) == 4):?>
                                                     <div class="answers">
                                                         <div class="answer col-sm-3 col-sm-offset-4" id="sodoku_input">

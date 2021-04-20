@@ -43,7 +43,7 @@
                         <select name="task_type" id="select_type_task" class="form-control">
                             <option value="1" selected="selected">Тест с ответами</option>
                             <option value="2">Тест с картинками</option>
-                            <option value="3">Перетаскивание</option>
+                            <option value="3">Закрытый тест</option>
                             <option value="4">Судоку с числами</option>
                             <option value="5">Судоку с картинками</option>
                             <option value="6">Арифметика со знаками</option>
@@ -132,7 +132,10 @@
                             <input type="file" name="answer5Img" placeholder="" value="">
                         </div>
                         <div class="type_task" type-task-val="3">
-
+                            <p>Изображение вопроса</p>
+                            <input type="file" name="question" placeholder="" value="" class="form-control">
+                            <p>Введите правильный ответ</p>
+                            <input type="text" name="rightAnswer" placeholder="" value="" class="form-control">
                         </div>
                         <div class="type_task" type-task-val="4">
                             <input type="text" name = "string-size" placeholder="Количество строк и столбцов" id="string-size">

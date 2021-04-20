@@ -103,7 +103,14 @@ class AdminTaskController extends AdminBase
                 }
                 $answersStr = implode('~', $answers);
                 $options['answers'] = $answersStr;
-            }elseif($options['task_type'] == 4){
+            }elseif($options['task_type']== 3) {
+                if (isset($_POST['rightAnswer']) && !empty($_POST['rightAnswer'])) {
+                    $answer = $_POST['rightAnswer'];
+                } else{
+                    $errors[] = 'Заполните поля Правильный ответ';
+                }
+                $options['answers'] = $answer;
+            }elseif($options['task_type'] == 4) {
                 if (isset($_POST['string-size']) && !empty($_POST['string-size'])) {
                     $colSize = intval($_POST['string-size']);
                     $table = array();
@@ -525,7 +532,7 @@ class AdminTaskController extends AdminBase
                 }
                 $answersStr = implode('~', $answers);
                 $options['answers'] = $answersStr;
-            }elseif ($options['task_type'] == 2){
+            }elseif ($options['task_type'] == 2) {
                 if (isset($_FILES["answer1Img"]["tmp_name"]) && is_uploaded_file($_FILES["answer1Img"]["tmp_name"])) {
                     $answers[] = "1";
                 }
@@ -552,6 +559,13 @@ class AdminTaskController extends AdminBase
 //                    $options['answers'] = $answersStr;
 //                }
 
+            }elseif($options['task_type']== 3) {
+                if (isset($_POST['rightAnswer']) && !empty($_POST['rightAnswer'])) {
+                    $answer = $_POST['rightAnswer'];
+                } else{
+                    $errors[] = 'Заполните поля Правильный ответ';
+                }
+                $options['answers'] = $answer;
 
             }elseif($options['task_type'] == 4){
                 if (isset($_POST['string-size']) && !empty($_POST['string-size'])) {

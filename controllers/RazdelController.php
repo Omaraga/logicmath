@@ -339,7 +339,7 @@ class RazdelController
         $task = Task::getTaskById($taskId);
         $taskType = intval($task['task_type']);
         $taskAnswers = $task['answers'];
-        if ($taskType == 1 || $taskType == 2){
+        if ($taskType == 1 || $taskType == 2 || $taskType == 3){
             $rightAns = $taskAnswers[0];
         }elseif ($taskType == 4 || $taskType == 5){
             $rightAns = implode('~', $taskAnswers);
