@@ -298,16 +298,20 @@
                         </div>
                         <div class="decisions col-sm-12 col-xs-12">
                             <div class="row">
-                                <div class="decision col-sm-4" id="help">
+                                <div class="decision col-sm-4 hidden-xs" id="help">
                                     <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
                                                                                                          alt="">Көмек</a>
                                 </div>
                                 <div class="decision col-sm-4" style="display: none" id="solve">
                                     <a href="" id="solve" data-toggle="modal" data-target="#myModal2">Шешiмi</a>
                                 </div>
-                                <div class="decision col-sm-4" id="zhauapBeru">
+                                <div class="decision col-sm-4 col-xs-10 col-xs-offset-1" id="zhauapBeru">
                                     <a href="" id="checkAns">Жауап беру</a>
 
+                                </div>
+                                <div class="decision col-sm-4 visible-xs" id="help">
+                                    <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
+                                                                                                         alt="">Көмек</a>
                                 </div>
 
                                 <div class="decision col-sm-4" style="display: none" id="kelesiTapsyrma">

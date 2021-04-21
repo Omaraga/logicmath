@@ -610,3 +610,17 @@ input#testClose {
     /*line-height: 70px;*/
 }
 /*Конец страницы раздел*/
+@media (max-width: 767px) {
+
+    #help a > img{
+        width: 15%;
+        margin-right: 25%;
+        margin-left: -5%;
+    }
+    #help a#help{
+        padding: 0 0;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+}
