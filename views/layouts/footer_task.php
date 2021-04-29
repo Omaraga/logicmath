@@ -303,6 +303,13 @@
         });
     });
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-85EV1D3BKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-85EV1D3BKQ');
+</script>
 </body>
 </html>
