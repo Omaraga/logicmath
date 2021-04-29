@@ -301,29 +301,25 @@
                         </div>
                         <div class="decisions col-sm-12 col-xs-12">
                             <div class="row">
-                                <div class="decision col-sm-4 hidden-xs" id="help">
+                                <div class="decision col-sm-4 col-xs-3" id="help">
                                     <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
-                                                                                                         alt="">Көмек</a>
+                                                                                                         alt="" class="hidden-xs">Көмек</a>
                                 </div>
-                                <div class="decision col-sm-4" style="display: none" id="solve">
+                                <div class="decision col-sm-4 col-xs-3" style="display: none" id="solve">
                                     <a href="" id="solve" data-toggle="modal" data-target="#myModal2">Шешiмi</a>
                                 </div>
-                                <div class="decision col-sm-4 col-xs-10" id="zhauapBeru">
+                                <div class="decision col-sm-4 col-xs-6" id="zhauapBeru">
                                     <a href="" id="checkAns">Жауап беру</a>
 
                                 </div>
-                                <div class="decision col-sm-4 visible-xs" id="help">
-                                    <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
-                                                                                                         alt="">Көмек</a>
-                                </div>
 
-                                <div class="decision col-sm-4" style="display: none" id="kelesiTapsyrma">
+                                <div class="decision col-sm-4 col-xs-6" style="display: none" id="kelesiTapsyrma">
                                     <?$nextTask = getNextTask($taskList, $currTaskId);?>
 
                                     <a href="/cabinet/razdel/<?=$nextTask['razdel_id'];?>/<?=$nextTask['id'];?>" id="kelesiTapsyrma1">Келесi тапсырма</a>
 
                                 </div>
-                                <div class="decision col-sm-3 hidden-xs">
+                                <div class="decision col-sm-3 col-xs-3">
                                     <a href="" id="request" data-toggle="modal" data-target="#myModal1"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 27px"></i></a>
                                 </div>
                                 <!--                        <div class="decision col-sm-4 visible-xs" style="margin-top: 10px">-->
@@ -380,7 +376,7 @@
                     </div>
                     <div class="modal-body" id="modalBody" >
                         <div class="row">
-                            <div class="col-sm-2 imgErr" >
+                            <div class="col-sm-2 imgErr hidden-xs" >
                                 <img src="/template/images/razdel/techError.png" alt="">
                             </div>
                             <div class="col-sm-10">

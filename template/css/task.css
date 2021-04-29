@@ -658,15 +658,65 @@ input#testClose {
 /*Конец страницы раздел*/
 @media (max-width: 767px) {
 
-    #help a > img{
-        width: 15%;
-        margin-right: 25%;
-        margin-left: -5%;
-    }
+
     #help a#help{
-        padding: 0 0;
-        text-align: left;
-        margin-top: 5px;
+        padding: 15px 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    body{
+        background-color: #CCFFFC;
+    }
+    .closeX{
+        position: fixed;
+        top: 2px;
+        left: 5%;
+        z-index: 100;
+
+    }
+    .starX{
+        position: fixed;
+        top: 2px;
+        left: 17%;
+        z-index: 100;
+
+    }
+    .closeX a img, .starX a img{
+        width: 28px;
+    }
+    .task-wrap{
+        margin-top: 30px;
+    }
+
+    .decision a#help{
+        width: 90%;
+    }
+    .decision a#request{
+        margin-top: -5px;
+    }
+    .decision a{
+        width: 100%;
+        font-size: 25px;
+        padding: 15px 0px;
+    }
+    .decision{
+        padding-right: 1px;
+        padding-left: 1px;
+        padding-top:1px;
+    }
+
+    .decision a#solve{
+        width: 90%;
+    }
+    #myModal1 img {
+        width: 20px;
+    }
+    .form-control{
+        width: 90%;
+    }
+    .modal-content{
+        width: 54vh;
     }
 
 }

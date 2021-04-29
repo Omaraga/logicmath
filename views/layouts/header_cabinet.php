@@ -124,7 +124,7 @@
     <div id="mobileMenu" class="visible-xs">
         <div class="container-fluid">
             <div class="row">
-            <div class="col-xs-2 logicmoblog">
+                <div class="col-xs-3 logicmoblog">
                     <a href="/">
                         <img src="../../template/images/home/logo-mobile-footer.png" alt="" class="menu-logo">
                         
@@ -136,15 +136,10 @@
                         Тапсырмалар
                     </a>
                 </div>
-                <div class="col-xs-2 ratingLogo p-0 <?=$currClass=='rating'?'activ':'';?>">
+                <div class="col-xs-3 ratingLogo p-0 <?=$currClass=='rating'?'activ':'';?>">
                     <a href="/cabinet/rating">
                         <img src="../../template/images/home/rating.png" alt="" class="menu-logo"><br>
                         Рейтинг
-                    </a>
-                </div>
-                <div class="col-xs-2 p-0 <?=$currClass=='help'?'activ':'';?>">
-                    <a href="/cabinet/help">
-                        <img src="../../template/images/home/spravochnik.png" alt="" class="menu-logo"><br> Көмек
                     </a>
                 </div>
                 <div class="col-xs-3 p-0 <?=$currClass=='progress'?'activ':'';?>">

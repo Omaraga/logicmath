@@ -1610,7 +1610,34 @@ digit.digit {
 @media (max-width: 767px) {
     /*begin score cabinet*/
 
-  
+    #mainPage {
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    #mobileMenu .logicmoblog a img{
+        height: auto;
+        width: 50%;
+    }
+    #mobileMenu .menu-logo{
+        width: 40px;
+    }
+    #mobileMenu a img{
+        height: 40px;
+    }
+    #mobileMenu .activ{
+        background-color: #ffa600;
+    }
+
+    .bgrad {
+        width: 45%;
+        height: 45%;
+        padding: 5px 0 0px 0px;
+    }
+    .topPad .bgrad{
+        float: left;
+        margin-left: 0px;
+    }
     #score>div.scoreRating{
         width: 99%;
         position: relative;
