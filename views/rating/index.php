@@ -3,7 +3,7 @@
     <section>
         <div class="container" id = "rating">
             <div class="row">
-                <div class="col-sm-11 col-sm-offset-1 col-xs-12" id="ratTop">
+                <div class="col-sm-12 col-xs-12" id="ratTop">
                     <div class="col-xs-4 col-sm-6 p-0 ratingPlace1">
                         <img src="/template/images/home/rating-top.png" alt="">
                         <span>
@@ -21,22 +21,23 @@
                     <div class="col-xs-4 col-sm-4  ratingPlace topPad">
                         <h4>0 жане 1 сынып</h4>
                     </div>
-                    <div class="col-xs-2 col-sm-1 center topPad">
-                    <div class="bgrad <? echo intval($country_id) > 0? 'activ':'';?>">
-                        <a  href="/cabinet/rating/<?=$user['country_id']?>"><img src="/template/images/coutnry/<?=$user['country_id']?>.png" alt=""></a>
-                    </div>
+                    <div class="col-xs-2 col-sm-2 center topPad">
+                        <div class="bgrad <? echo intval($country_id) > 0? 'activ':'';?>">
+                            <a  href="/cabinet/rating/<?=$user['country_id']?>"><img src="/template/images/coutnry/<?=$user['country_id']?>.png" alt=""></a>
+                        </div>
+                        <div class="bgrad <? echo intval($country_id) == 0? 'activ':'';?>">
+                            <a  href="/cabinet/rating/0"><img src="/template/images/coutnry/0.png" alt=""></a>
+                        </div>
                         
                     </div>
-                    <div class="col-xs-2 col-sm-1 center topPad">
-                    <div class="bgrad <? echo intval($country_id) == 0? 'activ':'';?>">
-                        <a  href="/cabinet/rating/0"><img src="/template/images/coutnry/0.png" alt=""></a>
-                    </div>
+
+
                         
-                    </div>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-11 col-sm-offset-1 col-xs-12">
+                <div class="col-sm-12 col-xs-12">
                         <div id="country">
                             <div class="col-sm-4 col-xs-4 ratNav activ" id="active">
                                 <a href="/cabinet/rating" class="ratbtn"><img src="/template/images/home/children.png" class="ratImg" alt=""><br class="visible-xs"><span class="btn">Оқушылар</span></a>
@@ -51,7 +52,7 @@
                 </div>
             </div>
                     <div class="row">
-                        <div class="col-sm-11 col-sm-offset-1 participantsTable">
+                        <div class="col-sm-12 participantsTable">
 
                             <table class = "table">
 
@@ -75,10 +76,10 @@
                                                 <img src="/upload/images/user/default.png" alt="">
                                             <?endif;?>
                                         </td>
-                                        <td id="city" width="30%" style="text-align:left; <?echo $rating['user_id'] == $userId?' font-weight:600; background-color: #FFF383':'';?>">
+                                        <td id="city" width="40%" style="text-align:left; <?echo $rating['user_id'] == $userId?' font-weight:600;line-height:40px; background-color: #FFF383':'';?>">
                                             <?=$rating['fio'];?>                                            
                                         </td>
-                                        <td id="city" width="20%" style="text-align:left; <?echo $rating['user_id'] == $userId?' font-weight:600; background-color: #FFF383':'';?>">
+                                        <td id="city" width="10%" style="text-align:left; <?echo $rating['user_id'] == $userId?' font-weight:600; line-height:40px;background-color: #FFF383':'';?>">
                                             <p class="flagRating">
                                                 <img src="/template/images/coutnry/<?=$user['country_id']?>.png" alt=""> 
                                             </p>                                            

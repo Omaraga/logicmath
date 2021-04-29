@@ -1,6 +1,9 @@
 <?php include ROOT . '/views/layouts/header_task.php'; ?>
-    <div class="close">
-        <a href="/cabinet">X</a>
+    <div class="closeX">
+        <a href="/cabinet"><img src="/template/images/razdel/x.png" alt=""></a>
+    </div>
+    <div class="starX">
+        <a href="/progress"><img src="/template/images/razdel/star.png" alt=""></a>
     </div>
     <section>
         <div class="container">
@@ -305,7 +308,7 @@
                                 <div class="decision col-sm-4" style="display: none" id="solve">
                                     <a href="" id="solve" data-toggle="modal" data-target="#myModal2">Шешiмi</a>
                                 </div>
-                                <div class="decision col-sm-4 col-xs-10 col-xs-offset-1" id="zhauapBeru">
+                                <div class="decision col-sm-4 col-xs-10" id="zhauapBeru">
                                     <a href="" id="checkAns">Жауап беру</a>
 
                                 </div>
@@ -342,7 +345,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="modal-title">Қосымша мәлімет</h4>
+
                     </div>
+                    <img src="/template/images/razdel/helpLogo.png" alt="" id="helpLogo">
                     <div class="modal-body" id="modalBody" >
 
                     </div>
@@ -374,11 +379,19 @@
                         <h4 class="modal-title" id="modal-title">Бiзбен хабарласу</h4>
                     </div>
                     <div class="modal-body" id="modalBody" >
-                        <select name="typeError" id="typeError" class="form-control">
-                            <option value="Техникалық қате">Техникалық қате</option>
-                            <option value="Тапсырмада қателік">Тапсырмада қателік</option>
-                            <option value="Тапсырма қиын">Тапсырма қиын</option>
-                        </select>
+                        <div class="row">
+                            <div class="col-sm-2 imgErr" >
+                                <img src="/template/images/razdel/techError.png" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <select name="typeError" id="typeError" class="form-control">
+                                    <option value="Техникалық қате">Техникалық қате</option>
+                                    <option value="Тапсырмада қателік">Тапсырмада қателік</option>
+                                    <option value="Тапсырма қиын">Тапсырма қиын</option>
+                                </select>
+                            </div>
+                        </div>
+                        
                         <br>
                         <textarea name="message" id="messageError" cols="30" rows="10" class="form-control"></textarea>
                     </div>

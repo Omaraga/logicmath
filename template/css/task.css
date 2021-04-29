@@ -273,27 +273,25 @@
     background-color: #8bcf9b;
 }
 
-.close{
+.closeX{
     position: fixed;
     top: 1%;
-    left: 4%;
+    left: 88%;
+    z-index: 100;
+
+}
+.starX{
+    position: fixed;
+    top: 14%;
+    left: 88%;
     z-index: 100;
 
 }
 #animate-star img{
     width: 50px;
 }
-.close a{
-    border: 0.1px solid black;
-    color: black;
-    padding: 4px 15px;
-    box-shadow: 0 5px #a0a9b2;
-    border-radius: 15px;
-    background-color: #ffffff;
-    font-family: Calibri;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2em;
+.closeX a img, .starX a img{
+    width: 4em;
 }
 #task .taskBody{
     padding: 0 0 1% 0;
@@ -364,12 +362,60 @@
 }
 #myModal .modal-footer .btn-default{
     margin-right: 15px;
-    padding: 5px 20px;
-    background: #3daeff;
 }
 #myModal img{
     width: 80%;
     /*max-height: 60vh;*/
+}
+#myModal1 .btn-default, #myModal .btn-default{
+    border: 0px solid #333; /* Рамка */
+    border-radius: 5px;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #fff; /* Цвет текста */
+    background: linear-gradient(to bottom left, #fcba03, #ff8500);
+    font-weight: 400;
+    font-size: 18px;
+}
+#myModal1 #sendRequest{
+    background: linear-gradient(to bottom left, rgb(0,106,194), rgb(0,138,252));
+}
+#myModal1 img{
+    width: 80%;
+}
+#myModal #helpLogo{
+    width: 60px;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+#myModal1 .imgErr{
+    text-align: right;
+    padding-right: 8px;
+}
+#myModal1 select{
+    background-color: rgb(41,167,245);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    padding-top: 5px;
+    margin-top:10px;
+
+}
+#myModal1 h4, #myModal h4{
+
+    color: rgb(0,92,168);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+}
+#myModal1 .modal-header, #myModal .modal-header{
+    padding: 0;
+    background-color: #CCFFFC;
+    border-radius: 10px;
+}
+#myModal1 .modal-content, #myModal .modal-content{
+    border-radius: 10px;
 }
 
 

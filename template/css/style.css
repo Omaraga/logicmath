@@ -3,7 +3,7 @@
     src:  url('/template/fonts/calibri.ttf') format('TrueType'),
   }
 body{
-    background-color: #ebebeb;
+    background-color: #005CA8;
     font-family: Calibri;
 }
 .bg-purple{
@@ -17,7 +17,7 @@ body{
 }
 #menu{
     display: block;
-     background-color: #005CA8;
+    background-color: #c9eaf8;
     /*background-image: url(../images/home/left_bar.png);
     background-repeat: no-repeat;
     background-size: contain;*/
@@ -32,10 +32,14 @@ body{
     font-size: 1.0em;
     text-align: center;
     margin: 0px;
+
 }
 .sizeMenu{
     width: 100%;
     padding-top: 10px;
+    background-color: #005CA8;
+    height: 100%;
+    border-radius: 0 0% 20% 0/ 0 0 5% 0;
 }
 .col-sm-11.col-sm-offset-1.col-xs-12.p-0 {
     padding: 0;
@@ -60,19 +64,24 @@ label{
 
 #menu li{
     display: block;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 15px 0px;
     width: 100%;
     cursor: pointer;
 
 }
 #menu li.activ{
-    background-color: #5fbf77;
+    background-color: #ffa600;
+
+}
+#menu li.activ a{
+
+    font-weight: bold;
 }
 #menu a{
     color: #fff;
 }
 #menu li:hover{
-    border: 1px solid #000;
+
 }
 #menu .menu-logo{
     width: 60%;
@@ -81,6 +90,8 @@ label{
 #mainPage{
     background-image: url(../images/home/mainPage.png);
     background-size: cover;
+    border-radius: 3% 0% 0% 0%/ 7% 0 0 0;
+    margin-left: 8%;
 }
 #mainPage #lessons{
     text-align: center;
@@ -176,7 +187,7 @@ label{
     background-color:#B26BD6;
     color: #fff;
     font-weight: 500;
-    border-radius: 18px;
+    border-radius: 5px;
     padding: 0;
     text-align: center;
 }
@@ -227,6 +238,12 @@ label{
 */
 .topPad{
     top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.topPad .bgrad{
+    float: left;
+    margin-left: 5px;
 }
 #rating #myTab li a:hover{
     background-color: #6d58c1;
@@ -235,7 +252,9 @@ label{
 td,tbody,th{
     border:none;
 }
+.participantsTable td{
 
+}
 .participantsTable {
     /*padding: 5%;*/
     font-family: Nunito-ExtraBold,arial,sans-serif;
@@ -250,20 +269,22 @@ td,tbody,th{
     /*height: 5%;*/
     /*width: 10%;*/
     border-radius: 10px 0 0 10px;
-    padding-top: 10%;
-    padding: 2%;
+    text-align: center;
+    line-height: 40px;
+
     color: #fff;
 }
 .participantsTable #name{
     background-color: #ffffff;
+
 }
 .participantsTable #name img{
-    width: 50%;
+    width: 40px;
 }
 .participantsTable #city{
     background-color: #ffffff;
     /*height: 5%;*/
-    padding: 2%;
+
     
 }
 .participantsTable #score{
@@ -271,10 +292,9 @@ td,tbody,th{
     /*height: 5%;*/
     /*width: 20% ;*/
     border-radius: 0 10px 10px 0;
-    padding: 2%;
 }
 .participantsTable #score img{
-    width: 60%;
+    width: 50px;
 }
 .scoreRating{
     
@@ -487,13 +507,12 @@ td,tbody,th{
 
 .saveChange input{
     border: 0px solid #333; /* Рамка */
-    border-radius: 20px;
+    border-radius: 10px;
     display: inline-block;
-    padding: 10px 15px; /* Поля */
+    padding: 10px 25px; /* Поля */
     text-decoration: none; /* Убираем подчёркивание */
     color: #fff; /* Цвет текста */
-    background-color: #10A758;
-    background: linear-gradient(to top , #10A758, #38ec8f);
+    background: linear-gradient(to bottom left, rgb(136,242,77), rgb(46,181,79));
     font-family: Calibri;
     font-style: normal;
     font-weight: 550;
@@ -595,6 +614,7 @@ td,tbody,th{
     border: 2px solid #dfe2e8;
     box-shadow: 0 5px #dfe2e8;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .categories{
@@ -828,7 +848,7 @@ nav>li{
     margin: 0;
 }
 .progressTask .taskImg img{
-    width: 83%;
+    width: 60px;
     text-align: center;
     padding-left: 7px;
 }
@@ -1217,10 +1237,9 @@ input:checked + .slider:before {
 .bgrad {
     border-radius: 100%;
     background-color: #005CA8;
-    padding: 1% 0;
-    width: 50px;
-    height: 38px;
-    padding: 6px 1px;
+    width: 45px;
+    height: 45px;
+    padding: 5px 0 0px 0px;
 }
 .bgrad.activ{
     background-color: #fff;
@@ -1229,9 +1248,10 @@ input:checked + .slider:before {
    padding: 0;
 }
 .bgrad a img{
-    width: 50%;
-    max-width: 40px;
+    width: 70%;
+    max-width: 45px;
 }
+
 
 /*togle end*/
 
@@ -1244,7 +1264,7 @@ input:checked + .slider:before {
     /*line-height: 48px;*/
 }
 .flagRating img{
-    width: 13%;
+    width: 30px;
 }
 #myRatingPlace{
     /*border: 2px solid #2a6496;*/
@@ -2356,7 +2376,7 @@ div.rightMenu{
     width: 100%;
   }
   #headerProg>#headerPr{
-    width: 50%;
+    width: 45%;
     position: relative;
     overflow: hidden;
     height: 90px;
@@ -2364,7 +2384,7 @@ div.rightMenu{
   }
   #headerProg>#headerPr>a.prof{
     border: 0px solid #333;
-    border-radius: 20px;
+    border-radius: 8px;
     display: inline-block;
     padding: 8px;
     text-align: center;
@@ -2473,7 +2493,7 @@ div.rightMenu{
   
   #ratTop>.ratingPlace1>span{
       float: left;
-      width: 94%;
+      width: 92%;
       position: absolute;
       z-index: 1;
       top: 45px;
@@ -2481,7 +2501,7 @@ div.rightMenu{
       left: 30px;
       background-color: #B26BD6;
       border: 0px solid #333;
-      border-radius: 20px;
+      border-radius: 5px;
       display: inline-block;
       padding: 0px;
       text-align: center;
@@ -2558,12 +2578,14 @@ div.rightMenu{
 }
 #paginationOfRating>ul {
     text-align: center;
+    padding-right: 10%;
 }
 #paginationOfRating>ul>li>p {
      background-color: #f8b300;
     background: linear-gradient(to top , #f58a08, #f8b300);
-    padding: 5px 15px;
+    padding: 8px 25px;
     margin: 8px;
     border-radius: 10px;
     color: #fff;
+    font-weight: 500;
 }
