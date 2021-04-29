@@ -722,5 +722,9 @@ input#testClose {
         margin-left: 0;
         margin-right: 0;
     }
+    #help a > img{
+        display: none;
+    ;
+    }
 
 }

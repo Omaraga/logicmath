@@ -303,7 +303,7 @@
                             <div class="row">
                                 <div class="decision col-sm-4 col-xs-3" id="help">
                                     <a href="" id="help" data-toggle="modal" data-target="#myModal"><img src="/template/images/razdel/leo_head.png"
-                                                                                                         alt="" class="hidden-xs">Көмек</a>
+                                                                                                         alt="">Көмек</a>
                                 </div>
                                 <div class="decision col-sm-4 col-xs-3" style="display: none" id="solve">
                                     <a href="" id="solve" data-toggle="modal" data-target="#myModal2">Шешiмi</a>
