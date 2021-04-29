@@ -716,7 +716,11 @@ input#testClose {
         width: 90%;
     }
     .modal-content{
-        width: 54vh;
+        width: 50vh;
+    }
+    .decisions .row{
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
