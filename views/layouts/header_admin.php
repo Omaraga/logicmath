@@ -13,7 +13,7 @@
 <!--        <link href="/template/css/animate.css" rel="stylesheet">-->
 <!--        <link href="/template/css/main.css" rel="stylesheet">-->
         <link href="/template/css/responsive.css" rel="stylesheet">
-     <link href="/template/css/style.css" rel="stylesheet">
+        <link href="/template/css/style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
@@ -28,7 +28,7 @@
 
     </head><!--/head-->
 
-    <body>
+    <body id="bodyAdmin">
         <div class="page-wrapper">
 
             <header id="header"><!--header-->

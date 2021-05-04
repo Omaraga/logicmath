@@ -6,6 +6,9 @@ body{
     background-color: #005CA8;
     font-family: Calibri;
 }
+body#bodyAdmin{
+    background-color: #f5f3f4;
+}
 .bg-purple{
     background-color: #A15AC4;
 }
@@ -1609,6 +1612,43 @@ digit.digit {
 
 @media (max-width: 767px) {
     /*begin score cabinet*/
+    #mobileHeader{
+        margin-bottom: 10px;
+    }
+    #mobileHeader a img{
+        width: 30px;
+        margin-top: -7px;
+        z-index: 100;
+        position: absolute;
+        border-radius: 5px;
+    }
+    #mobileHeader .col-xs-4{
+        text-align: center;
+    }
+    #mobileHeader .col-xs-4:last-child{
+        text-align: right;
+        padding-right: 0;
+    }
+    #mobileHeader .col-xs-4 a{
+        text-align: left;
+        background-color: #FF9900;
+        display: block;
+        font-size: 12px;
+        padding: 2px 0;
+        color: #ffffff;
+        font-weight: bold;
+        width: 80%;
+        border-radius: 40% 10% 10% 40%;
+        margin-top: 15px;
+    }
+    #mobileHeader a span {
+        margin-left: 35px;
+    }
+    #menu1>ul.nav.nav-pills>li>a{
+        width: 80%;
+        padding: 5px 0;
+    }
+
 
     #mainPage {
         margin-left: 0;
@@ -1632,7 +1672,7 @@ digit.digit {
     .bgrad {
         width: 45%;
         height: 45%;
-        padding: 5px 0 0px 0px;
+        padding: 3px 3px 3px 3px;
     }
     .topPad .bgrad{
         float: left;
@@ -1665,7 +1705,7 @@ digit.digit {
         width: 80%;
         position: absolute;
         z-index: 1;
-        top: 7px;
+        top: 14px;
         text-align: center;
         left: 15px;
       }
@@ -1674,6 +1714,7 @@ digit.digit {
         z-index: 2;
         position: absolute;
         height: auto;
+        top: 7px;
         text-align: left;
       }
     /*end score cabinet*/
@@ -1796,12 +1837,29 @@ digit.digit {
         z-index: 2;
         position: absolute;
         height: auto;
+        margin-top: 7px;
       }
+      .tox-progress-content .imgtext{
+          line-height: 14px;
+          font-size: 14px;
+          float: left;
+          margin-left: 0px;
+          display: block;
+          width: 70%;
+      }
+
+       .progressTask .taskImg img {
+           width: 30%;
+           float: left;
+           text-align: left;
+           padding-left: 7px;
+        }
       #progressNav>ul.nav.nav-pills>li>img.imgP{
         width: 40px;
         z-index: 2;
         position: absolute;
         height: auto;
+        margin-top: 0;
       }
       #progressNav>ul.nav.nav-pills>li{
         width: 100%;
@@ -1812,9 +1870,9 @@ digit.digit {
       }
       #progressNav>ul.nav.nav-pills>li>a.progressText{
         border: 0px solid #333;
-        border-radius: 20px;
+        border-radius: 5px;
         display: inline-block;
-        padding: 3px;
+        padding: 10px 3px;
         text-align: center;
         text-decoration: none;
         color: #fff;
@@ -1849,9 +1907,9 @@ digit.digit {
       }
       #menu1>ul.nav.nav-pills>li>a.btn{
         border: 0px solid #333;
-        border-radius: 20px;
+        border-radius: 7px;
         display: inline-block;
-        padding: 3px;
+        padding: 5px;
         text-align: center;
         text-decoration: none;
         color: #fff;
@@ -1883,7 +1941,8 @@ digit.digit {
       /*end tab cabinet*/
       
 .taskTotal .imgtask img {
-    width: 55px;
+    width: 40px;
+    margin-top: -5px;
 }
     #DoneProg{
         border-radius: 10px;
@@ -1915,8 +1974,11 @@ digit.digit {
         margin-right: 0;
     }
     #btn-light .nav.nav-pills>li.navBar2, #btn-light .nav.nav-pills>li.navBar1{
-        width: 100%;
+        width: 48%;
+        margin-left: 2%;
     }
+
+
     .footer-purple.col-sm-12.col-xs-12 {
         padding: 10px;
     }
@@ -1946,6 +2008,8 @@ digit.digit {
         font-size: 1em;
         font-weight: 600;
         margin-bottom: 10px;
+        padding: 13px 0;
+        word-wrap: normal;
     }
     .footer-cert{
         width: 35%;
@@ -1995,7 +2059,7 @@ digit.digit {
        padding: 0;
     }
     .bgrad a img{
-        width: 60%;
+        width: 90%;
         max-width: 30px;
     }
    #mobileMenu .col-xs-2, #mobileMenu .col-xs-3{
@@ -2018,7 +2082,7 @@ digit.digit {
         padding: 4px 0;
     }
     .flagRating img{
-        width: 25%;
+        width: 60%;
     }
     #country{
         font-size: 12px;
@@ -2027,7 +2091,7 @@ digit.digit {
         padding: 5px;
     }
     #country img{
-        width: 60%;
+        width: 50%;
     }
     .catBar .progress{
         height: 8px;
@@ -2158,10 +2222,13 @@ digit.digit {
     }
     .participantsTable #num {
         padding: 4px;
-        padding-top: 6%;
+        padding-top: 0%;
+    }
+    .table>tbody>tr>td{
+        padding:0px;
     }
     .participantsTable #name img{
-        width: 100%;
+        width: 80%;
         margin-right: 5px;
         border-radius: 10px;
     }
@@ -2451,6 +2518,8 @@ div.rightMenu{
 }
   /*end progress PRofile*/
   @media  (min-width: 768px){
+
+
     /*begin rating cabinet*/
 #country>.ratNav>a{
     position: relative;
@@ -2503,6 +2572,10 @@ div.rightMenu{
       height: auto;
       text-align: left;
     }
+
+    /*#mainPage .courceNav>ul.nav-pills>li {*/
+    /*    width: 50%!important;*/
+    /*}*/
   /*end rating cabinet*/
   }
   

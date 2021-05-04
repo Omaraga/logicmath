@@ -6,7 +6,7 @@
             <div class="row">
             <div class="col-sm-10" >
                     
-                <div class="div" id="btn-light">
+                <div class="div courceNav" id="btn-light">
                     <ul class="nav nav-pills">
                         <li class="active navBar1"><a data-toggle="pill" href="#home" class=" btn btn-light">Олимпиада және логика</a></li>
                         <li class="navBar2"><a data-toggle="pill" href="#matem" class=" btn btn-light">Математика</a></li>

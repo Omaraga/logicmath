@@ -53,7 +53,7 @@
                     </div>
                     <div class="taskTotal col-sm-4 col-xs-6">
                         <span class="taskImg imgtask">
-                            <img src="/template/images/home/star.png" alt=""><span class="imgtext" style="color: #000"><?=$myScore;?></span>
+                            <img src="/template/images/home/star.png" alt=""><?=$myScore;?>
                         </span>
                     </div>                         
                 </div>

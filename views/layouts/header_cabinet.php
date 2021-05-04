@@ -76,7 +76,7 @@
             </div>
         </div><!--/header-middle-->
 
-        <div class="header-bottom"><!--header-bottom-->
+        <div class="header-bottom hidden-xs"><!--header-bottom-->
             <div class="container">
 
             </div>
@@ -149,4 +149,34 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="mobileHeader" class="visible-xs container">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="/cabinet/progress">
+                    <img src="/template/images/home/molnya.png" alt="">
+                    <span>5</span>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="/cabinet/rating">
+                    <img src="/template/images/home/star-right.png" alt="" >
+                    <span><?=$myScore;?> </span>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="/profile">
+                    <?$fileName = $_SERVER['DOCUMENT_ROOT'] ."/upload/images/user/".$userId.".jpg"; ?>
+                    <?if(file_exists($fileName)):?>
+                        <img class="userPhoto2" src="/upload/images/user/<?=$userId;?>.jpg" alt="">
+                    <?else:?>
+                        <img class="userPhoto2" src="/upload/images/user/default.png" alt="">
+                    <?endif;?>
+                    <span><?=$user['name'];?> </span>
+                </a>
+            </div>
+
+
+        </div>
+
     </div>
