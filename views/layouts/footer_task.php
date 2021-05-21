@@ -13,6 +13,10 @@
 <!--<script src="/template/js/jquery.prettyPhoto.js"></script>-->
 <!--<script src="/template/js/main.js"></script>-->
 <script>
+    document.ondragstart = noselect;
+    document.onselectstart = noselect;
+    document.oncontextmenu = noselect;
+    function noselect() {return false;}
     $("#help").click(function (e) {
         var url = document.location.href;
         var urlA = url.split('/');
@@ -311,5 +315,6 @@
 
   gtag('config', 'G-85EV1D3BKQ');
 </script>
+
 </body>
 </html>

@@ -686,7 +686,7 @@ input#testClose {
         width: 28px;
     }
     .task-wrap{
-        margin-top: 30px;
+        margin-top:5vh;
     }
 
     .decision a#help{
@@ -724,7 +724,18 @@ input#testClose {
     }
     #help a > img{
         display: none;
-    ;
+    }
+    #question{
+        height: 40vh;
+    }
+    .scoreBlock {
+        height: 5vh;
+    }
+    #blockAnswer{
+        height: 25vh;
+    }
+    #task #score{
+        line-height: 30px;
     }
 
 }
